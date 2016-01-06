@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00121C821C3D20E40034FADD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00121C811C3D20E40034FADD /* BaseViewController.swift */; };
 		005153551C3D148D00C8533E /* BaseViewControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */; };
 		005153681C3D154400C8533E /* BaseViewControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 005153661C3D154400C8533E /* BaseViewControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0051536C1C3D155500C8533E /* BaseViewControllerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051536A1C3D155500C8533E /* BaseViewControllerSwiftTests.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00121C811C3D20E40034FADD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153541C3D148D00C8533E /* BaseViewControllerSwift iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseViewControllerSwift iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153661C3D154400C8533E /* BaseViewControllerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerSwift.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		005153641C3D152300C8533E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				00121C811C3D20E40034FADD /* BaseViewController.swift */,
 				00E0F5ED1C3D188A001478FB /* Supporting Files */,
 			);
 			path = Sources;
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00121C821C3D20E40034FADD /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 		0051535F1C3D148D00C8533E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -326,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwift;
 				PRODUCT_NAME = BaseViewControllerSwift;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		005153601C3D148D00C8533E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
