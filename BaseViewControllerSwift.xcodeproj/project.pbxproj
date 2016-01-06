@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00121C821C3D20E40034FADD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00121C811C3D20E40034FADD /* BaseViewController.swift */; };
+		001F17AC1C3D348700A7B1D2 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */; };
 		005153551C3D148D00C8533E /* BaseViewControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */; };
 		005153681C3D154400C8533E /* BaseViewControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 005153661C3D154400C8533E /* BaseViewControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0051536C1C3D155500C8533E /* BaseViewControllerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051536A1C3D155500C8533E /* BaseViewControllerSwiftTests.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		00121C811C3D20E40034FADD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
 		0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153541C3D148D00C8533E /* BaseViewControllerSwift iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseViewControllerSwift iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153661C3D154400C8533E /* BaseViewControllerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerSwift.h; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0051536A1C3D155500C8533E /* BaseViewControllerSwiftTests.swift */,
+				001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */,
 				0051536B1C3D155500C8533E /* Info.plist */,
 			);
 			path = Tests;
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001F17AC1C3D348700A7B1D2 /* MockViewController.swift in Sources */,
 				0051536C1C3D155500C8533E /* BaseViewControllerSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
