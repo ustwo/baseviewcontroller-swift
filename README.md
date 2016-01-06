@@ -70,7 +70,7 @@ Use the `setupView()` function to add target/actions to controls, set dynamicall
 override func setupView() {
   super.setupView()
 
-  underlyingView.titleLabel.text = "Foo"
+  underlyingView.titleLabel.text = profile.name
   underlyingView.finishedButton.addTarget(self, action: Selector("finishedButtonPressed:"), forControlEvents: .TouchUpInside)
 }
 ```

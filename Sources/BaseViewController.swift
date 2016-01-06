@@ -10,12 +10,12 @@ import UIKit
 
 
 /// Generic base view controller that automatically loads the underlying `BaseView` of type `T`.
-class BaseViewController<T : UIView>: UIViewController {
+public class BaseViewController<T : UIView>: UIViewController {
     
     
     // MARK: - Properties
     
-    var underlyingView: T {
+    public var underlyingView: T {
         if let myView = view as? T {
             return myView
         }
@@ -28,18 +28,18 @@ class BaseViewController<T : UIView>: UIViewController {
     
     // MARK: - Initializers
     
-    init() {
+    public init() {
         super.init(nibName: nil, bundle: nil)
     }
     
     
     // MARK: - View Lifecycle
     
-    override func loadView() {
+    public override func loadView() {
         view = T()
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
@@ -50,12 +50,12 @@ class BaseViewController<T : UIView>: UIViewController {
     // MARK: - Setup
     
     // Abstract method. Subclasses should override this method to setup their view.
-    func setupView() {
+    public func setupView() {
         
     }
     
     // Abstract method. Subclasses should override this method to add accessibility.
-    func setupAccessibility() {
+    public func setupAccessibility() {
         
     }
     
