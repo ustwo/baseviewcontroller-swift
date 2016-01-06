@@ -12,9 +12,56 @@ The BaseViewController framework provides an organizational tool for writing cus
 
 ## Installation
 
+### Manually
+
+Add the `BaseViewController.swift` file from the `Sources` folder to your Xcode project.
+
 ## Usage
 
+Use the `BaseViewController` as a base class for all your custom view controllers. Then override our common setup functions and have them automatically called as part of the initialization.
+
+`BaseViewController` itself is a subclass of `UIViewController`. It contains two empty setup functions that are called by `viewDidLoad()`. These commonly used setup functions are `setupView()` and `setupAccessibility()` and are called in that order.
+
+In addition, `BaseViewController` is also a generic class that takes a `UIView` as a type parameter. During the `loadView()` phase, it instantiates the view and sets it as the controller's view. `BaseViewController` also provides a `underlyingView` property for accessing the view without needing to type cast.
+
 ## Examples
+
+Here are some example implementations of using `BaseViewController`. In all of the examples we call `super` on the setup function, but do this as appropriate in your own code.
+
+### Controller Definition
+
+When defining your custom view controller, inherit from `BaseViewController` and specify your custom view. There is no need to instantiate your custom view or add an accessing property. This is all done by `BaseViewController`.
+
+```swift
+final class ProfileViewController: BaseViewController<ProfileView> {
+  ...
+}
+```
+
+### setupView
+
+Use the `setupView()` function to add target/actions to controls, set dynamically generated values, etc.
+
+```swift
+override func setupView() {
+  super.setupView()
+
+  underlyingView.titleLabel.text = "Foo"
+  underlyingView.finishedButton.addTarget(self, action: Selector("finishedButtonPressed:"), forControlEvents: .TouchUpInside)
+}
+```
+
+### setupAccessibility
+
+Use the `setupAccessibility()` function to add target/actions to controls, set dynamically generated values, etc.
+
+```swift
+override func setupAccessibility() {
+  super.setupAccessibility()
+
+  underlyingView.profileImage.accessibilityLabel = NSLocalizedString("Image of", comment: "") + " " +  profile.name
+}
+```
 
 
 ## Contributors
