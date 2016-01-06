@@ -12,9 +12,33 @@ The BaseViewController framework provides an organizational tool for writing cus
 
 ## Installation
 
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate BaseViewControllerSwift into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.3'
+use_frameworks!
+
+pod 'BaseViewControllerSwift', '~> 1.0'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ### Manually
 
-Add the `BaseViewController.swift` file from the `Sources` folder to your Xcode project.
+If you prefer not to use either of the aforementioned dependency managers, you can integrate BaseViewControllerSwift into your project manually. Add the `BaseViewController.swift` file from the `Sources` folder to your Xcode project.
 
 ## Usage
 
