@@ -53,7 +53,7 @@ override func setupView() {
 
 ### setupAccessibility
 
-Use the `setupAccessibility()` function to add target/actions to controls, set dynamically generated values, etc.
+Use the `setupAccessibility()` function to add dynamically generated accessibility information to the view.
 
 ```swift
 override func setupAccessibility() {
