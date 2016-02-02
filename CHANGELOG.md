@@ -8,8 +8,8 @@ BaseViewControllerSwift adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
-## [1.0.0](https://github.com/ustwo/baseview-swift/releases/tag/v1.0.0)
-Released on UNKNOWN.
+## [1.0.0](https://github.com/ustwo/baseview-swift/releases/tag/1.0.0)
+Released on 2 February 2016.
 
 #### Added
 - Initial release of `BaseViewController`.
