@@ -16,40 +16,40 @@ final class ProfileView: UIView {
     
     let titleLabel = UILabel()
     let profileImage = UIImageView()
-    let finishedButton = UIButton(type: .System)
+    let finishedButton = UIButton(type: .system)
     
-    private let stackView = UIStackView()
+    fileprivate let stackView = UIStackView()
     
     
     // MARK: - Initializers
     
     convenience init() {
-        self.init(frame: CGRectZero)
+        self.init(frame: CGRect.zero)
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor.whiteColor()
+        backgroundColor = UIColor.white
         
-        titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleTitle1)
+        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1)
         stackView.addArrangedSubview(titleLabel)
         
-        profileImage.contentMode = .ScaleAspectFit
+        profileImage.contentMode = .scaleAspectFit
         stackView.addArrangedSubview(profileImage)
         
-        finishedButton.setTitle(NSLocalizedString("Finished", comment: ""), forState: .Normal)
+        finishedButton.setTitle(NSLocalizedString("Finished", comment: ""), for: UIControlState())
         stackView.addArrangedSubview(finishedButton)
         
-        stackView.axis = .Vertical
-        stackView.distribution = .Fill
-        stackView.alignment = .Center
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .center
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1.0, constant: 0.0))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0.0))
-        addConstraint(NSLayoutConstraint(item: stackView, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: stackView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0.0))
     }
 
     required init?(coder aDecoder: NSCoder) {

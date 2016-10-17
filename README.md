@@ -4,7 +4,7 @@
 
 # BaseViewController
 
-The BaseViewController framework provides an organizational tool for writing custom view controllers using `UIKit`. This framework is written using Swift 2.1. It has been developed and used by iOS developers at [ustwo](ustwo.com).
+The BaseViewController framework provides an organizational tool for writing custom view controllers using `UIKit`. This framework is written using Swift 3.0. It has been developed and used by iOS developers at [ustwo](https://ustwo.com/).
 
 ## Dependencies
 
@@ -87,12 +87,14 @@ override func setupAccessibility() {
 }
 ```
 
+## Maintainers
 
-## Contributors
+* Shagun Madhikarmi (@madhikarma)
+* Aaron McTavish (@aamctustwo)
 
-* [Shagun Madhikarmi](mailto:shagun@ustwo.com)
-* [Aaron McTavish](mailto:aamct@ustwo.com)
-* [Martin Stolz](mailto:martin@ustwo.com)
+## Contact
+
+* [open.source@ustwo.com](mailto:open.source@ustwo.com)
 
 ## License
 
