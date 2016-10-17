@@ -12,6 +12,15 @@ The BaseViewController framework provides an organizational tool for writing cus
 
 ## Installation
 
+### BaseViewControllerSwift version vs Swift version.
+
+Because of the many Swift versions BaseViewControllerSwift supports, it might be confusing to find the version of BaseViewControllerSwift that you need. Below is a table that shows which version of BaseViewControllerSwift you should use for your Swift version.
+
+| Swift version | BaseViewControllerSwift version    |
+| ------------- | --------------- |
+| 3.0           | 2.0.0   |
+| 2.1           | 1.0.0        |
+
 ### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
