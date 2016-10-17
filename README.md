@@ -27,7 +27,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.3'
 use_frameworks!
 
-pod 'BaseViewControllerSwift', '~> 1.0'
+pod 'BaseViewControllerSwift', '~> 2.0'
 ```
 
 Then, run the following command:
@@ -68,10 +68,10 @@ Use the `setupView()` function to add target/actions to controls, set dynamicall
 
 ```swift
 override func setupView() {
-  super.setupView()
-
-  underlyingView.titleLabel.text = profile.name
-  underlyingView.finishedButton.addTarget(self, action: Selector("finishedButtonPressed:"), forControlEvents: .TouchUpInside)
+	super.setupView()
+	
+	underlyingView.titleLabel.text = profile.name
+	underlyingView.finishedButton.addTarget(self, action: #selector(ProfileViewController.finishedButtonPressed(_:)), for: .touchUpInside)
 }
 ```
 
@@ -81,9 +81,9 @@ Use the `setupAccessibility()` function to add dynamically generated accessibili
 
 ```swift
 override func setupAccessibility() {
-  super.setupAccessibility()
-
-  underlyingView.profileImage.accessibilityLabel = NSLocalizedString("Image of", comment: "") + " " +  profile.name
+	super.setupAccessibility()
+        
+	underlyingView.profileImage.accessibilityLabel = NSLocalizedString("Image of", comment: "") + " " +  profile.name
 }
 ```
 
