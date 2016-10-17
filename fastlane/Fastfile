@@ -1,0 +1,45 @@
+desc "Runs tests on the primary platforms and configurations"
+lane :test do
+    verify(
+        scheme: "BaseViewControllerSwift iOS",
+        destination: "OS=10.0,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.0"
+    )
+    verify_demo
+    pod_lib_lint
+end
+
+desc "Runs unit tests"
+lane :verify do |options|
+    scheme = options[:scheme]
+    destination = options[:destination]
+    sdk = options[:sdk]
+    output_directory = "fastlane/test_output/" + scheme + "/"
+    opts = {
+        :workspace => 'BaseViewControllerSwift.xcworkspace',
+        :scheme => scheme,
+        :destination => destination,
+        :sdk => sdk,
+        :code_coverage => true,
+        :xcargs => "ONLY_ACTIVE_ARCH=YES",
+        :output_directory => output_directory,
+        :clean => true
+    }
+    scan(opts)
+end
+
+desc "Build demo app"
+lane :verify_demo do
+    scheme = "iOS Example"
+    output_directory = "fastlane/test_output/" + scheme + "/"
+    xcodebuild(
+        workspace: "BaseViewControllerSwift.xcworkspace",
+        scheme: scheme,
+        destination: "OS=10.0,name=iPhone 7 Plus",
+        sdk: "iphonesimulator10.0",
+        xcargs: "ONLY_ACTIVE_ARCH=NO",
+        output_directory: output_directory,
+        clean: true,
+        build: true
+    )
+end
