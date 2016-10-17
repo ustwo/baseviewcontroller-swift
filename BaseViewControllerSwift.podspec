@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'BaseViewControllerSwift'
-  s.version = '1.0.0'
+  s.version = '2.0.0'
   s.license = 'MIT'
   s.summary = 'An organizational tool for writing custom view controllers using UIKit.'
   s.homepage = 'https://github.com/ustwo/baseviewcontroller-swift'
