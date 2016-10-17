@@ -64,4 +64,3 @@ open class BaseViewController<T : UIView>: UIViewController {
     }
     
 }
-
