@@ -16,7 +16,7 @@ final class ProfileViewController: BaseViewController<ProfileView> {
     
     // MARK: - Properties
     
-    private let profile: Profile
+    fileprivate let profile: Profile
     
     
     // MARK: - Initializers
@@ -27,6 +27,10 @@ final class ProfileViewController: BaseViewController<ProfileView> {
         super.init()
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     
     // MARK: - View Lifecycle
 
@@ -34,7 +38,7 @@ final class ProfileViewController: BaseViewController<ProfileView> {
         super.setupView()
         
         underlyingView.titleLabel.text = profile.name
-        underlyingView.finishedButton.addTarget(self, action: Selector("finishedButtonPressed:"), forControlEvents: .TouchUpInside)
+        underlyingView.finishedButton.addTarget(self, action: #selector(ProfileViewController.finishedButtonPressed(_:)), for: .touchUpInside)
     }
     
     override func setupAccessibility() {
@@ -46,14 +50,13 @@ final class ProfileViewController: BaseViewController<ProfileView> {
     
     // MARK: - Control Actions
     
-    func finishedButtonPressed(sender: UIButton) {
-        let alertController = UIAlertController(title: nil, message: "🎉", preferredStyle: .Alert)
+    func finishedButtonPressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: nil, message: "🎉", preferredStyle: .alert)
         
-        let doneAction = UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .Default, handler: nil)
+        let doneAction = UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default, handler: nil)
         alertController.addAction(doneAction)
         
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
 
 }
-
