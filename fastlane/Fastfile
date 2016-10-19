@@ -5,6 +5,11 @@ lane :test do
         destination: "OS=10.0,name=iPhone 7 Plus",
         sdk: "iphonesimulator10.0"
     )
+    verify(
+        scheme: "BaseViewControllerSwift tvOS",
+        destination: "OS=10.0,name=Apple TV 1080p",
+        sdk: "appletvsimulator10.0"
+    )
     verify_demo
     pod_lib_lint
 end
@@ -26,6 +31,7 @@ lane :verify do |options|
         :clean => true
     }
     scan(opts)
+    upload_cov
 end
 
 desc "Build demo app"
@@ -42,4 +48,13 @@ lane :verify_demo do
         clean: true,
         build: true
     )
+end
+
+desc "Upload code coverage reports (if running on CI)"
+lane :upload_cov do
+    if is_ci?
+        sh "bash ./codecov.sh"
+    else
+        say "No need to upload code coverage. Not running from CI."
+    end
 end
