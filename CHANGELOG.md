@@ -11,6 +11,13 @@ BaseViewControllerSwift adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
+## Upcoming
+
+#### Added
+- Added tvOS support.
+
+---
+
 ## [2.0.0](https://github.com/ustwo/baseview-swift/releases/tag/2.0.0)
 
 #### Breaking

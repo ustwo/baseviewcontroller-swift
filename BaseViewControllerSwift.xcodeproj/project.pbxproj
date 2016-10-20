@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		00121C821C3D20E40034FADD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00121C811C3D20E40034FADD /* BaseViewController.swift */; };
 		001F17AC1C3D348700A7B1D2 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */; };
+		002ECBE01DB7508700475DFC /* BaseViewControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002ECBD71DB7508700475DFC /* BaseViewControllerSwift.framework */; };
 		005153551C3D148D00C8533E /* BaseViewControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */; };
 		005153681C3D154400C8533E /* BaseViewControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 005153661C3D154400C8533E /* BaseViewControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0051536C1C3D155500C8533E /* BaseViewControllerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051536A1C3D155500C8533E /* BaseViewControllerSwiftTests.swift */; };
+		00D544061DB751840095DFB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00121C811C3D20E40034FADD /* BaseViewController.swift */; };
+		00D544071DB7518A0095DFB3 /* BaseViewControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 005153661C3D154400C8533E /* BaseViewControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00D544081DB751920095DFB3 /* BaseViewControllerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051536A1C3D155500C8533E /* BaseViewControllerSwiftTests.swift */; };
+		00D544091DB751950095DFB3 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		002ECBE11DB7508700475DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005153411C3D148D00C8533E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002ECBD61DB7508700475DFC;
+			remoteInfo = BaseViewControllerSwift;
+		};
 		005153561C3D148D00C8533E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 005153411C3D148D00C8533E /* Project object */;
@@ -27,6 +39,8 @@
 /* Begin PBXFileReference section */
 		00121C811C3D20E40034FADD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		001F17AA1C3D33EF00A7B1D2 /* MockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		002ECBD71DB7508700475DFC /* BaseViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		002ECBDF1DB7508700475DFC /* BaseViewControllerSwift tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseViewControllerSwift tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153541C3D148D00C8533E /* BaseViewControllerSwift iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BaseViewControllerSwift iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005153661C3D154400C8533E /* BaseViewControllerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerSwift.h; sourceTree = "<group>"; };
@@ -36,6 +50,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		002ECBD31DB7508700475DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002ECBDC1DB7508700475DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002ECBE01DB7508700475DFC /* BaseViewControllerSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005153461C3D148D00C8533E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +97,8 @@
 			children = (
 				0051534A1C3D148D00C8533E /* BaseViewControllerSwift.framework */,
 				005153541C3D148D00C8533E /* BaseViewControllerSwift iOS Tests.xctest */,
+				002ECBD71DB7508700475DFC /* BaseViewControllerSwift.framework */,
+				002ECBDF1DB7508700475DFC /* BaseViewControllerSwift tvOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +134,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		002ECBD41DB7508700475DFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D544071DB7518A0095DFB3 /* BaseViewControllerSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005153471C3D148D00C8533E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +153,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		002ECBD61DB7508700475DFC /* BaseViewControllerSwift tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002ECBEC1DB7508700475DFC /* Build configuration list for PBXNativeTarget "BaseViewControllerSwift tvOS" */;
+			buildPhases = (
+				002ECBD21DB7508700475DFC /* Sources */,
+				002ECBD31DB7508700475DFC /* Frameworks */,
+				002ECBD41DB7508700475DFC /* Headers */,
+				002ECBD51DB7508700475DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BaseViewControllerSwift tvOS";
+			productName = BaseViewControllerSwift;
+			productReference = 002ECBD71DB7508700475DFC /* BaseViewControllerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		002ECBDE1DB7508700475DFC /* BaseViewControllerSwift tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002ECBED1DB7508700475DFC /* Build configuration list for PBXNativeTarget "BaseViewControllerSwift tvOS Tests" */;
+			buildPhases = (
+				002ECBDB1DB7508700475DFC /* Sources */,
+				002ECBDC1DB7508700475DFC /* Frameworks */,
+				002ECBDD1DB7508700475DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002ECBE21DB7508700475DFC /* PBXTargetDependency */,
+			);
+			name = "BaseViewControllerSwift tvOS Tests";
+			productName = BaseViewControllerSwiftTests;
+			productReference = 002ECBDF1DB7508700475DFC /* BaseViewControllerSwift tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		005153491C3D148D00C8533E /* BaseViewControllerSwift iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0051535E1C3D148D00C8533E /* Build configuration list for PBXNativeTarget "BaseViewControllerSwift iOS" */;
@@ -157,10 +232,18 @@
 		005153411C3D148D00C8533E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = BaseViewControllerSwift;
 				TargetAttributes = {
+					002ECBD61DB7508700475DFC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					002ECBDE1DB7508700475DFC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
 					005153491C3D148D00C8533E = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
@@ -168,6 +251,7 @@
 					005153531C3D148D00C8533E = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -185,11 +269,27 @@
 			targets = (
 				005153491C3D148D00C8533E /* BaseViewControllerSwift iOS */,
 				005153531C3D148D00C8533E /* BaseViewControllerSwift iOS Tests */,
+				002ECBD61DB7508700475DFC /* BaseViewControllerSwift tvOS */,
+				002ECBDE1DB7508700475DFC /* BaseViewControllerSwift tvOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		002ECBD51DB7508700475DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002ECBDD1DB7508700475DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005153481C3D148D00C8533E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +323,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		002ECBD21DB7508700475DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D544061DB751840095DFB3 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002ECBDB1DB7508700475DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D544091DB751950095DFB3 /* MockViewController.swift in Sources */,
+				00D544081DB751920095DFB3 /* BaseViewControllerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		005153451C3D148D00C8533E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		002ECBE21DB7508700475DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002ECBD61DB7508700475DFC /* BaseViewControllerSwift tvOS */;
+			targetProxy = 002ECBE11DB7508700475DFC /* PBXContainerItemProxy */;
+		};
 		005153571C3D148D00C8533E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 005153491C3D148D00C8533E /* BaseViewControllerSwift iOS */;
@@ -251,6 +373,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		002ECBE81DB7508700475DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwift;
+				PRODUCT_NAME = BaseViewControllerSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		002ECBE91DB7508700475DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwift;
+				PRODUCT_NAME = BaseViewControllerSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		002ECBEA1DB7508700475DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		002ECBEB1DB7508700475DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		0051535C1C3D148D00C8533E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwiftTests;
@@ -403,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baseviewcontrollerswift.BaseViewControllerSwiftTests;
@@ -414,6 +626,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		002ECBEC1DB7508700475DFC /* Build configuration list for PBXNativeTarget "BaseViewControllerSwift tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002ECBE81DB7508700475DFC /* Debug */,
+				002ECBE91DB7508700475DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002ECBED1DB7508700475DFC /* Build configuration list for PBXNativeTarget "BaseViewControllerSwift tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002ECBEA1DB7508700475DFC /* Debug */,
+				002ECBEB1DB7508700475DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		005153441C3D148D00C8533E /* Build configuration list for PBXProject "BaseViewControllerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
