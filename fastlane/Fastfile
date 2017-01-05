@@ -37,7 +37,6 @@ lane :verify_demo do
     xcodebuild(
         workspace: "BaseViewControllerSwift.xcworkspace",
         scheme: scheme,
-        destination: "name=iPhone 7 Plus",
         sdk: "iphonesimulator10.2",
         output_directory: output_directory,
         clean: true,
