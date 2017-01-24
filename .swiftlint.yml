@@ -1,10 +1,6 @@
 disabled_rules:
-  - function_body_length
   - line_length
   - nesting
-  - operator_whitespace
-  - trailing_whitespace
-  - vertical_whitespace
 opt_in_rules:
   - attributes
   - closure_end_indentation
@@ -12,9 +8,11 @@ opt_in_rules:
   - conditional_returns_on_newline
   - empty_count
   - explicit_init
+  - file_header
   - first_where
   - force_unwrapping
   - number_separator
+  - object_literal
   - operator_usage_whitespace
   - overridden_super_call
   - private_outlet
@@ -23,10 +21,27 @@ opt_in_rules:
   - switch_case_on_newline
 
 included:
+  - Example
   - Sources
 excluded:
   - Pods
   - Tests
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/  .*?\.swift
+                    \/\/  BaseViewControllerSwift
+                    \/\/
+                    \/\/  Created by .*? on \d{1,2}\/\d{1,2}\/\d{4}\.
+                    \/\/  Copyright © \d{4} ustwo Fampany Ltd\. All rights reserved\.
+                    \/\/
+
+trailing_whitespace:
+  ignores_empty_lines: true
+  ignores_comments: true
+vertical_whitespace:
+  max_empty_lines: 2
 
 custom_rules:
   # pragma mark style
