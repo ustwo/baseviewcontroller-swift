@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "002ECBD61DB7508700475DFC"
-               BuildableName = "BaseViewControllerSwift tvOS.framework"
+               BuildableName = "BaseViewControllerSwift.framework"
                BlueprintName = "BaseViewControllerSwift tvOS"
                ReferencedContainer = "container:BaseViewControllerSwift.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "002ECBD61DB7508700475DFC"
-            BuildableName = "BaseViewControllerSwift tvOS.framework"
+            BuildableName = "BaseViewControllerSwift.framework"
             BlueprintName = "BaseViewControllerSwift tvOS"
             ReferencedContainer = "container:BaseViewControllerSwift.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "002ECBD61DB7508700475DFC"
-            BuildableName = "BaseViewControllerSwift tvOS.framework"
+            BuildableName = "BaseViewControllerSwift.framework"
             BlueprintName = "BaseViewControllerSwift tvOS"
             ReferencedContainer = "container:BaseViewControllerSwift.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "002ECBD61DB7508700475DFC"
-            BuildableName = "BaseViewControllerSwift tvOS.framework"
+            BuildableName = "BaseViewControllerSwift.framework"
             BlueprintName = "BaseViewControllerSwift tvOS"
             ReferencedContainer = "container:BaseViewControllerSwift.xcodeproj">
          </BuildableReference>
