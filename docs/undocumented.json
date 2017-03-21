@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/aamct/Documents/App-Projects/baseviewcontroller-swift/Sources/BaseViewController.swift",
+      "line": 32,
+      "symbol": "BaseViewController.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/baseviewcontroller-swift/Sources/BaseViewController.swift",
+      "line": 36,
+      "symbol": "BaseViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/baseviewcontroller-swift/Sources/BaseViewController.swift",
+      "line": 43,
+      "symbol": "BaseViewController.loadView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/aamct/Documents/App-Projects/baseviewcontroller-swift/Sources/BaseViewController.swift",
+      "line": 47,
+      "symbol": "BaseViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/aamct/Documents/App-Projects/baseviewcontroller-swift"
+}

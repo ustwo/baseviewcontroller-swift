@@ -15,6 +15,7 @@ open class BaseViewController<T : UIView>: UIViewController {
     
     // MARK: - Properties
     
+    /// The view managed by the view controller typed by the `BaseViewController` generic.
     open var underlyingView: T {
         if let myView = view as? T {
             return myView
@@ -53,12 +54,12 @@ open class BaseViewController<T : UIView>: UIViewController {
     
     // MARK: - Setup
     
-    // Abstract method. Subclasses should override this method to setup their view.
+    /// Abstract method. Subclasses should override this method to setup their view.
     open func setupView() {
         
     }
     
-    // Abstract method. Subclasses should override this method to add accessibility.
+    /// Abstract method. Subclasses should override this method to add accessibility.
     open func setupAccessibility() {
         
     }

@@ -1,6 +1,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/ustwo/baseviewcontroller-swift/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/ustwo/baseviewcontroller-swift.svg?branch=master)](https://travis-ci.org/ustwo/baseviewcontroller-swift)
 [![codecov.io](https://codecov.io/github/ustwo/baseviewcontroller-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/baseviewcontroller-swift?branch=master)
+[![Platform](https://img.shields.io/cocoapods/p/BaseViewControllerSwift.svg?style=flat)](https://ustwo.github.io/baseviewcontroller-swift)
 
 # BaseViewController
 
