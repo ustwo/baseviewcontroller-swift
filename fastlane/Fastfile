@@ -103,6 +103,12 @@ lane :bump_version  do |options|
         xcodeproj: './BaseViewControllerSwift.xcodeproj'
     )
 
+    update_docs
+
+    sh 'cd ../ && git add ./docs/*'
+
+    sh 'cd ../ && git commit -m \'Update documentation for v' + version + '\''
+
     push_to_git_remote
 
     set_github_release(
