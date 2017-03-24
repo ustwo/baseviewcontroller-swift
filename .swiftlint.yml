@@ -8,9 +8,11 @@ opt_in_rules:
   - conditional_returns_on_newline
   - empty_count
   - explicit_init
+  - fatal_error_message
   - file_header
   - first_where
   - force_unwrapping
+  - implicitly_unwrapped_optional
   - number_separator
   - object_literal
   - operator_usage_whitespace
@@ -18,6 +20,7 @@ opt_in_rules:
   - private_outlet
   - prohibited_super_call
   - redundant_nil_coalescing
+  - sorted_imports
   - switch_case_on_newline
 
 included:

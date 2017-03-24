@@ -6,9 +6,8 @@
 //  Copyright © 2016 ustwo Fampany Ltd. All rights reserved.
 //
 
-import UIKit
-
 import BaseViewControllerSwift
+import UIKit
 
 
 final class ProfileViewController: BaseViewController<ProfileView> {
