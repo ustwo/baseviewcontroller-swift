@@ -108,4 +108,4 @@ override func setupAccessibility() {
 
 ## License
 
-BaseView is released under the MIT License. See the LICENSE file.
+BaseViewControllerSwift is released under the MIT License. See the LICENSE file.
