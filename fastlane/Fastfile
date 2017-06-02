@@ -37,7 +37,7 @@ lane :verify_demo do
     xcodebuild(
         workspace: "BaseViewControllerSwift.xcworkspace",
         scheme: scheme,
-        sdk: "iphonesimulator10.2",
+        sdk: "iphonesimulator10.3",
         output_directory: output_directory,
         clean: true,
         build: true
