@@ -6,7 +6,9 @@ lane :test do
     verify(
         scheme: "BaseViewControllerSwift tvOS"
     )
-    verify_demo
+    verify_demo(
+        scheme: "iOS Example"
+    )
     pod_lib_lint
 end
 
@@ -31,16 +33,18 @@ lane :verify do |options|
 end
 
 desc "Build demo app"
-lane :verify_demo do
-    scheme = "iOS Example"
-    output_directory = "fastlane/test_output/" + scheme + "/"
+lane :verify_demo do |options|
+    scheme = options[:scheme]
+    destination = options[:destination]
+    sdk = options[:sdk]
     xcodebuild(
-        workspace: "BaseViewControllerSwift.xcworkspace",
+        workspace: 'BaseViewControllerSwift.xcworkspace',
         scheme: scheme,
-        sdk: "iphonesimulator10.3",
-        output_directory: output_directory,
-        clean: true,
-        build: true
+        destination: destination,
+        sdk: sdk,
+        xcargs: 'ONLY_ACTIVE_ARCH=YES CODE_SIGN_IDENTITY='' CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO',
+        build: true,
+        clean: true
     )
 end
 
