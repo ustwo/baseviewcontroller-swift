@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/ustwo/baseviewcontroller-swift.svg?branch=master)](https://travis-ci.org/ustwo/baseviewcontroller-swift)
 [![codecov.io](https://codecov.io/github/ustwo/baseviewcontroller-swift/coverage.svg?branch=master)](https://codecov.io/github/ustwo/baseviewcontroller-swift?branch=master)
 [![Platform](https://img.shields.io/cocoapods/p/BaseViewControllerSwift.svg?style=flat)](https://ustwo.github.io/baseviewcontroller-swift)
+![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 
 # BaseViewController
 
@@ -17,10 +18,11 @@ The BaseViewController framework provides an organizational tool for writing cus
 
 Because of the many Swift versions BaseViewControllerSwift supports, it might be confusing to find the version of BaseViewControllerSwift that you need. Below is a table that shows which version of BaseViewControllerSwift you should use for your Swift version.
 
-| Swift version | BaseViewControllerSwift version    |
-| ------------- | --------------- |
-| 3.0           | 2.0.0   |
-| 2.1           | 1.0.0        |
+| Swift version | BaseViewControllerSwift version |
+|---------------|---------------------------------|
+| 5.0           | 3.0.0                           |
+| 3.0           | 2.0.0                           |
+| 2.1           | 1.0.0                           |
 
 ### CocoaPods
 
@@ -79,7 +81,7 @@ Use the `setupView()` function to add target/actions to controls, set dynamicall
 ```swift
 override func setupView() {
 	super.setupView()
-	
+
 	underlyingView.titleLabel.text = profile.name
 	underlyingView.finishedButton.addTarget(self, action: #selector(ProfileViewController.finishedButtonPressed(_:)), for: .touchUpInside)
 }
@@ -92,7 +94,7 @@ Use the `setupAccessibility()` function to add dynamically generated accessibili
 ```swift
 override func setupAccessibility() {
 	super.setupAccessibility()
-        
+
 	underlyingView.profileImage.accessibilityLabel = NSLocalizedString("Image of", comment: "") + " " +  profile.name
 }
 ```
