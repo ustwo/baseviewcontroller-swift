@@ -49,7 +49,7 @@ final class ProfileViewController: BaseViewController<ProfileView> {
     
     // MARK: - Control Actions
     
-    func finishedButtonPressed(_ sender: UIButton) {
+    @objc func finishedButtonPressed(_ sender: UIButton) {
         let alertController = UIAlertController(title: nil, message: "🎉", preferredStyle: .alert)
         
         let doneAction = UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default, handler: nil)
