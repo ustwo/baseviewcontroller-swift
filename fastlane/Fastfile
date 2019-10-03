@@ -1,10 +1,12 @@
 desc "Runs tests on the primary platforms and configurations"
 lane :test do
     verify(
-        scheme: "BaseViewControllerSwift iOS"
+        scheme: "BaseViewControllerSwift",
+        device: "iPhone 11"
     )
     verify(
-        scheme: "BaseViewControllerSwift tvOS"
+        scheme: "BaseViewControllerSwift",
+        device: "Apple TV"
     )
     verify_demo(
         scheme: "iOS Example"
@@ -16,12 +18,14 @@ desc "Runs unit tests"
 lane :verify do |options|
     scheme = options[:scheme]
     destination = options[:destination]
+    device = options[:device]
     sdk = options[:sdk]
-    output_directory = "fastlane/test_output/" + scheme + "/"
+    output_directory = "fastlane/test_output/" + scheme + "_" + device + "/"
     opts = {
         :workspace => 'BaseViewControllerSwift.xcworkspace',
         :scheme => scheme,
         :destination => destination,
+        :device => device,
         :sdk => sdk,
         :code_coverage => true,
         :xcargs => "ONLY_ACTIVE_ARCH=YES",
