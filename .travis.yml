@@ -22,14 +22,16 @@ env:
   - SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
   - SIM_PLATFORM="tvOS Simulator" SIM_DEVICE="Apple TV"
 script:
-  - ./fastlane/travis.sh
+  - ./ci/travis.sh
+after_success:
+  - ./ci/codecov.sh
 
 jobs:
   include:
     - stage: "App Test"
       env: SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
       script:
-        - ./fastlane/build_test.sh
+        - ./ci/build_test.sh
     - stage: "Pod Validation"
       env: SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
       script:
