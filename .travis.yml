@@ -15,6 +15,9 @@ before_install:
   - brew update
   - brew outdated swiftlint || brew upgrade swiftlint
 
+install:
+  - bundle install --without development
+
 env:
   - SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
   - SIM_PLATFORM="tvOS Simulator" SIM_DEVICE="Apple TV"
