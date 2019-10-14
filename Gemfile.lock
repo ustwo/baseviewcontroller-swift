@@ -234,6 +234,7 @@ DEPENDENCIES
   fastlane
   fastlane-plugin-versioning
   jazzy
+  xcpretty
 
 BUNDLED WITH
    2.0.2
