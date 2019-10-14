@@ -1,4 +1,4 @@
-osx_image: xcode10.2
+osx_image: xcode11.1
 language: objective-c
 
 env:
@@ -9,10 +9,30 @@ env:
 before_install:
   - rvm list
   - rvm install $(cat .ruby-version)
+  - rvm use $(cat .ruby-version)
+  - gem update --system
+  - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
   - brew update
   - brew outdated swiftlint || brew upgrade swiftlint
-  - gem install bundler -v 2.0.1
 
-# Test using Fastlane
+install:
+  - bundle install --without development
+
+env:
+  - SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
+  - SIM_PLATFORM="tvOS Simulator" SIM_DEVICE="Apple TV"
 script:
-  - ./fastlane/travis.sh
+  - ./ci/travis.sh
+after_success:
+  - ./ci/codecov.sh
+
+jobs:
+  include:
+    - stage: "App Test"
+      env: SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
+      script:
+        - ./ci/build_test.sh
+    - stage: "Pod Validation"
+      env: SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
+      script:
+        - "bundle exec pod lib lint"

@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00AF1DD31C3D5A4900BEC5C9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF1DD21C3D5A4900BEC5C9 /* ProfileView.swift */; };
-		00AF1DD71C3D5B3B00BEC5C9 /* BaseViewControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AF1DD61C3D5B3B00BEC5C9 /* BaseViewControllerSwift.framework */; };
 		00AF1DDA1C3D5C7800BEC5C9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF1DD91C3D5C7800BEC5C9 /* Profile.swift */; };
 		00E0F5E41C3D1748001478FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0F5E11C3D1748001478FB /* AppDelegate.swift */; };
 		00E0F5E61C3D1748001478FB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0F5E31C3D1748001478FB /* ProfileViewController.swift */; };
 		00E0F5EA1C3D1765001478FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E0F5E71C3D1765001478FB /* Assets.xcassets */; };
 		00E0F5EB1C3D1765001478FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E0F5E81C3D1765001478FB /* LaunchScreen.storyboard */; };
+		00FEFB2023460B4D00743310 /* BaseViewControllerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 00FEFB1F23460B4D00743310 /* BaseViewControllerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00AF1DD71C3D5B3B00BEC5C9 /* BaseViewControllerSwift.framework in Frameworks */,
+				00FEFB2023460B4D00743310 /* BaseViewControllerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +105,9 @@
 			dependencies = (
 			);
 			name = "iOS Example";
+			packageProductDependencies = (
+				00FEFB1F23460B4D00743310 /* BaseViewControllerSwift */,
+			);
 			productName = "iOS Example";
 			productReference = 00E0F5CB1C3D16E8001478FB /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
@@ -285,7 +288,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -299,7 +303,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baseviewcontrollerswift.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -314,7 +321,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.baseviewcontrollerswift.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -343,6 +353,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00FEFB1F23460B4D00743310 /* BaseViewControllerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BaseViewControllerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00E0F5C31C3D16E8001478FB /* Project object */;
 }

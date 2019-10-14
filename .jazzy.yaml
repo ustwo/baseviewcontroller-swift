@@ -4,4 +4,10 @@ github_url: https://github.com/ustwo/baseviewcontroller-swift
 module: BaseViewControllerSwift
 output: docs
 theme: fullwidth
-xcodebuild_arguments: [-workspace,'BaseViewControllerSwift.xcworkspace',-scheme,'BaseViewControllerSwift iOS']
+xcodebuild_arguments:
+  [
+    -workspace,
+    "BaseViewControllerSwift.xcworkspace",
+    -scheme,
+    "BaseViewControllerSwift",
+  ]

@@ -11,9 +11,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.3'
   s.tvos.deployment_target = '9.0'
 
-  s.source_files = 'Sources/*.swift'
+  s.source_files = 'BaseViewControllerSwift/Sources/BaseViewControllerSwift/*.swift'
 
   s.frameworks = 'Foundation', 'UIKit'
 
   s.requires_arc = true
+
+  s.swift_version = '5.1'
 end

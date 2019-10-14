@@ -16,6 +16,11 @@ class BaseViewControllerSwiftTests: XCTestCase {
     
     // MARK: - Properties
     
+    static var allTests = [
+        ("testUnderlyingView", testUnderlyingView),
+        ("testUnderlyingView_ChangeRootView", testUnderlyingView_ChangeRootView),
+    ]
+    
     var viewController: MockViewController!
     
     

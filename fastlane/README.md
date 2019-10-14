@@ -15,26 +15,6 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### test
-```
-fastlane test
-```
-Runs tests on the primary platforms and configurations
-### verify
-```
-fastlane verify
-```
-Runs unit tests
-### verify_demo
-```
-fastlane verify_demo
-```
-Build demo app
-### upload_cov
-```
-fastlane upload_cov
-```
-Upload code coverage reports (if running on CI)
 ### update_docs
 ```
 fastlane update_docs
