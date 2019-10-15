@@ -22,7 +22,7 @@ env:
   - SIM_PLATFORM="iOS Simulator" SIM_DEVICE="iPhone 11"
   - SIM_PLATFORM="tvOS Simulator" SIM_DEVICE="Apple TV"
 script:
-  - ./ci/travis.sh
+  - ./ci/unit_test.sh
 after_success:
   - ./ci/codecov.sh
 
